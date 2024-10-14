@@ -15,7 +15,8 @@ Möglichkeiten zur Erweiterung:
 - Inhalt eines beliebigen Feldnamen in einen beliebeigen anderen Feldnamen (oder URL) zu packen
 - beliebige Textveränderung
 - Erkennen, wenn der Inhalt des Feldes leer ist und es einfach löschen (Aktuell kommt noch die Fehlermeldung: "jq: error (at <stdin>:0): Cannot iterate over null (null)")
-- Keine Ahnung wie man evtl. Timeouts durch Bitwarden in den Griff bekommen könnte. (>> Bei mir gab es keinen Timeout und ich habe 300 Einträge, bei denen es 83 App-Verweise gibt.)
+- Keine Ahnung wie man evtl. Timeouts durch Bitwarden in den Griff bekommen könnte. Es ist durchaus möglich, dass bei größeren Datensätzen die BW_SESSION Key abläuft
+  (>> Bei mir gab es keinen Timeout und ich habe 300 Einträge, bei denen es 83 App-Verweise gibt.)
 - evtl. gibt es eine schnellere Methode alles zu speichern
 
 Zum groben Abschätzen wie lange es dauert:
@@ -29,7 +30,10 @@ Zum groben Abschätzen wie lange es dauert:
 ## Voraussetzungen
 
 Bevor du mit dem Skript beginnst, stelle sicher, dass du folgende Software installiert hast:
-
+0. Unix-Umgebung mit bash erforderlich
+    ```bash
+    sudo apt-get install bash
+    ```
 1. **snap**: (https://snapcraft.io/docs/installing-snapd)
 2. **Bitwarden CLI**:
     ```bash
