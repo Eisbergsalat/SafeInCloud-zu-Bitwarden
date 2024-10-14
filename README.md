@@ -30,7 +30,11 @@ Zum groben Abschätzen wie lange es dauert:
 ## Voraussetzungen
 
 Bevor du mit dem Skript beginnst, stelle sicher, dass du folgende Software installiert hast:
-0. Unix-Umgebung mit bash erforderlich
+
+-1. Backup
+      Weil ich so ein Urvertrauen in meine *husthust* Fähigkeiten *husthust* habe, habe ich das natürlich ausgelassen.... Als Dev ;D... Also wenn du so tryhard bist wie ich... Deine Entscheidung!
+
+0. Unix-Umgebung (bei mir: Ubuntu in einer VM auf Windows) mit bash erforderlich
     ```bash
     sudo apt-get install bash
     ```
@@ -76,3 +80,8 @@ Bevor du mit dem Skript beginnst, stelle sicher, dass du folgende Software insta
     ```bash
     /bin/bash update_bw.sh
     ```
+
+## Ablauf
+1. Das Skript listet ersteinmal alle Einträge auf, die ein Feld mit dem Namen "Anwendung" haben.
+   Hier werden: Name des Eintrags, Inhalt des Anwendungsfeldes und die potentiell neue URL aufgelistet
+2. Mit dem Bestätigen (J/n) werden dann nacheinander alle aufgelisteten Einträge geändert.
